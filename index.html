@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/codin-icon.jpg">
+</head>
+
+<body>
+    <div class="main-cantainer">
+        <!-- login page -->
+        <div class="login-main animate__animated animate__zoomIn" id="loginPage">
+            <h1> Quiz Log in</h1>
+            <!-- email-->
+            <div class="user-email">
+                <div class="form-control">
+                    <input type="text" id="userEmailLog" required="" onclick="display()">
+                    <label>
+                        <span style="transition-delay:0ms">E</span><span style="transition-delay:50ms">m</span><span
+                            style="transition-delay:100ms">a</span><span style="transition-delay:150ms">i</span><span
+                            style="transition-delay:200ms">l</span>
+                    </label>
+                </div>
+            </div>
+            <!-- password-->
+            <div class="user-email">
+                <div class="form-control">
+                    <input type="password" id="passwordLog" required="" onclick="display()">
+                    <label>
+                        <span style="transition-delay:0ms">P</span><span style="transition-delay:50ms">a</span><span
+                            style="transition-delay:100ms">s</span><span style="transition-delay:150ms">s</span><span
+                            style="transition-delay:200ms">w</span><span style="transition-delay:250ms">o</span><span
+                            style="transition-delay:300ms">r</span><span style="transition-delay:350ms">d</span>
+                    </label>
+                </div>
+            </div>
+            <!--login button-->
+            <div class="login-btn-main">
+                <button class="btn" onclick="logIn()">
+                    <span class="btn-text-one">Log in</span>
+                    <span class="btn-text-two"><i class="fa-solid fa-right-to-bracket"></i></span>
+                </button>
+            </div>
+            <!--signup go-->
+            <div class="Signup-go">
+                <p>Don't have an account?<a onclick="signupOpen()">Signup</a></p>
+            </div>
+            <div class="worng-e-p animate__animated animate__zoomIn" id="worngEP">
+                <p>(Sorry, your Email or password was incorrect. Please check your Email or password.)</p>
+            </div>
+        </div>
+
+        <!-- signup page -->
+        <div class="signup-main animate__animated animate__zoomIn" id="signupPage">
+            <h1> Quiz Sign up</h1>
+            <!-- user name-->
+            <div class="user-email">
+                <div class="form-control">
+                    <input type="text" id="userName" required="">
+                    <label>
+                        <span style="transition-delay:0ms">F</span><span style="transition-delay:50ms">u</span><span
+                            style="transition-delay:100ms">l</span><span style="transition-delay:150ms">l</span>
+                        <span style="transition-delay:200ms">N</span><span style="transition-delay:250ms">a</span><span
+                            style="transition-delay:300ms">m</span><span style="transition-delay:350ms">e</span>
+                    </label>
+                </div>
+            </div>
+            <!-- email-->
+            <div class="user-email">
+                <div class="form-control">
+                    <input type="text" id="userEmail" required="">
+                    <label>
+                        <span style="transition-delay:0ms">E</span><span style="transition-delay:50ms">m</span><span
+                            style="transition-delay:100ms">a</span><span style="transition-delay:150ms">i</span><span
+                            style="transition-delay:200ms">l</span>
+                    </label>
+                </div>
+            </div>
+            <!-- password-->
+            <div class="user-email">
+                <div class="form-control">
+                    <input type="text" id="createPassword" required="">
+                    <label>
+                        <span style="transition-delay:0ms">C</span><span style="transition-delay:50ms">r</span><span
+                            style="transition-delay:100ms">e</span><span style="transition-delay:150ms">a</span><span
+                            style="transition-delay:200ms">t</span><span style="transition-delay:250ms">e</span>
+                        <span style="transition-delay:300ms">P</span><span style="transition-delay:350ms">a</span><span
+                            style="transition-delay:400ms">s</span><span style="transition-delay:450ms">s</span><span
+                            style="transition-delay:500ms">w</span><span style="transition-delay:550ms">o</span><span
+                            style="transition-delay:600ms">r</span><span style="transition-delay:650ms">d</span>
+                    </label>
+                </div>
+            </div>
+            <!--signup button-->
+            <div class="login-btn-main">
+                <button class="btn" onclick="signUp()">
+                    <span class="btn-text-one">Sign Up</span>
+                    <span class="btn-text-two"><i class="fa-solid fa-user-plus"></i></span>
+                </button>
+            </div>
+            <!--signup go-->
+            <div class="Signup-go">
+                <p>have an account?<a onclick="loginOpen()">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js"></script>
+    <script src="javascript/app.js"></script>
+</body>
+
+</html>

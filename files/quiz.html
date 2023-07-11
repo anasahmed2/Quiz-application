@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../images/codin-icon.jpg">
+</head>
+
+<body>
+    <!-- starts quiz main page -->
+    <div class="Start-main" id="startquizpage">
+        <div class="nav animate__animated animate__zoomIn">
+            <div class="nav_heading nav-itmes">
+                <h1 id="language"></h1>
+            </div>
+            <div class="timer nav-itmes">
+                <p id="timer"></p>
+            </div>
+        </div>
+        <div class="questoins-box animate__animated animate__zoomIn" id="questoins-box">
+            <div class="question">
+                <h1 id="question-no"> </h1>
+            </div>
+            <div class="question">
+                <p id="ask-question"></p>
+            </div>
+            <div class="answer">
+                <form action="" class="container">
+
+                    <div class="option1-main">
+                        <input class="input-btn" type="radio" onclick="enableBtn()" id="valueIs-1" name="answer"
+                            value="1">
+                        <label class="neon-btn" for="valueIs-1">
+                            <span class="span"></span>
+                            <span class="txt" id="option1">a</span>
+                        </label>
+                    </div>
+
+                    <div class="option1-main">
+                        <input class="input-btn" type="radio" onclick="enableBtn()" id="valueIs-2" name="answer"
+                            value="2">
+                        <label class="neon-btn" for="valueIs-2">
+                            <span class="span"></span>
+                            <span class="txt" id="option2">b</span>
+                        </label>
+                    </div>
+
+                    <div class="option1-main">
+                        <input class="input-btn" type="radio" onclick="enableBtn()" id="valueIs-3" name="answer"
+                            value="3">
+                        <label class="neon-btn" for="valueIs-3">
+                            <span class="span"></span>
+                            <span class="txt" id="option3">c</span>
+                        </label>
+                    </div>
+
+                    <div class="option1-main">
+                        <input class="input-btn" type="radio" onclick="enableBtn()" id="valueIs-4" name="answer"
+                            value="4">
+                        <label class="neon-btn" for="valueIs-4">
+                            <span class="span"></span>
+                            <span class="txt" id="option4">d</span>
+                        </label>
+                    </div>
+                </form>
+            </div>
+
+            <div class="login-btns-main">
+                <button disabled class="btns" onclick="quizLanguage()" id="nextBtn">
+                    <span class="btns-text-one">Next</span>
+                    <span class="btns-text-two"><i class="fa-solid fa-right-to-bracket"></i></span>
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- result box  -->
+    <div class="result-main animate__animated animate__zoomIn" id="result-main">
+        <div class="result-modal">
+            <h1>Result</h1>
+            <div class="circular-progress">
+                <span class="progress-value">10%</span>
+            </div>
+            <h3 id="pass/fail"></h3>
+            <div class="login-btns-main">
+                <button class="btns" onclick="resultDisply()">
+                    <span class="btns-text-one">Ok</span>
+                    <span class="btns-text-two"><i class="fa-solid fa-right-to-bracket"></i></span>
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- quiz select page -->
+    <div class="quiz-mian" id="quiz-mian">
+        <div class="quiz-h1">
+            <div class="h1-main">
+                <h1>Coding quiz</h1>
+            </div>
+            <div class="sign-out">
+                <div class="sign-out-btn">
+                    <button class="sign-out-btn-style" onclick="signOut()" id="nextBtn">Sign-Out</button>
+                </div>
+            </div>
+        </div>
+        <div class="option-main ">
+            <div class="options" onclick="htmlOpen()"><img src="../images/mobile.jpg" alt="" width="100%"></div>
+            <div class="options" onclick="cssOpen()"><img src="../images/css.jpg" alt="" width="100%"></div>
+            <div class="options" onclick="jsOpen()"><img src="../images/js.jpg" alt="" width="100%"></div>
+        </div>
+    </div>
+    <script src="../javascript/app.js"></script>
+</body>
+
+</html> 
